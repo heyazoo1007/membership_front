@@ -13,7 +13,7 @@ export default function Home() {
 
       // await postRequest('/api/userMembership/register', { userId: 1, membershipId: 1 });
       // Spring Boot 서버로 POST 요청 전송
-      const response = await fetch('http://localhost:8080/api/userMembership/register',
+      const response = await fetch('http://3.34.95.55:8080/api/userMembership/register',
       {
         method: 'POST',
         headers : {
