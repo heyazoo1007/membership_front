@@ -11,7 +11,6 @@ export default function Home() {
     setLoading(true);
     try {
 
-      // await postRequest('/api/userMembership/register', { userId: 1, membershipId: 1 });
       // Spring Boot 서버로 POST 요청 전송
       const response = await fetch('http://3.34.95.55:8080/api/userMembership/register',
       {
@@ -27,7 +26,7 @@ export default function Home() {
 
       const result = await response.json();
       if (response.ok) {
-        alert('Join successed')
+        alert('Join successed');
       } else {
         alert(`Join failed : ${result.message}`);
       }
